@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        <script>
+            (function() {
+                console.log('Unstyled');
+                console.error('Unstyled error');
+
+                console.log("%cThis is a green text", "color:green; font-size: 20px");
+
+                console.log('%c JavaScript!!', 'font-weight: bold; font-size: 50px;color: red; text-shadow: 3px 3px 0 rgb(217,31,38) , 6px 6px 0 rgb(226,91,14) , 9px 9px 0 rgb(245,221,8) , 12px 12px 0 rgb(5,148,68) , 15px 15px 0 rgb(2,135,206) , 18px 18px 0 rgb(4,77,145) , 21px 21px 0 rgb(42,21,113)');
+
+
+                console.log(
+                    "%cAltering the text experience",
+                    "background-color: fuchsia ; color: white ; font-weight: bold ; " +
+                    "font-size: 20px ; font-style: italic ; text-decoration: underline ; " +
+                    "font-family: 'american typewriter' ; text-shadow: 1px 1px 3px black ;"
+                );
+
+                console.group('asdf');
+                console.log('asdf');
+                console.log('asdf');
+                console.log('asdf');
+                console.groupEnd();
+
+                var styleArray= [
+                'background-image:    url("https://media.giphy.com/media/2dQ3FMaMFccpi/giphy.gif")',
+                'background-size: cover',
+                'color: #fff',
+                'padding: 10px 20px',
+                'line-height: 35px',
+                'width : 70px',
+                'height : 70px',
+                'border : 5px solid black'
+                ];
+                console.log('%cI love you!', styleArray.join(';'));
+            }());
+        </script>
+    </body>
+</html>
